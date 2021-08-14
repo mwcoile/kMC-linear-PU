@@ -1,0 +1,12 @@
+Enter the polymerization temperature (K),500
+Would you like to run to a specified conversion rather than a specified reaction time? (Y/N),Y
+Enter the desired reaction time in seconds. (This will be ignored if 'Y' is chosen above), 360
+Alternatively enter the desired fractional conversion of alcohol you wish to run to (e.g. 0.95). (This will be ignored if 'N' is chosen above), 0.95
+Enter the number of monomers you wish to simulate. More monomers will lead to more precise results but require more computational time,100000
+Enter mass(es) of diol monomers as a comma separated list (g/mol, 1700, 154.25
+Enter initial concentration(s) of the diol monomers as a comma separated list (M), 0.9,0.1
+Enter mass(es) of diisocyanate monomers as a comma separated list (g/mol), 250
+Enter initial concentration(s) of the diisocyanate monomers as a comma separated list (M), 1
+Enter activation energy for each diol/diisocyanate pair in kJ/mol. Order them as follows: diol 1 with diisocyanate 1; diol 1 with diisocyanate 2; etc, 30, 30
+Enter Arrhenius preexponential factor (A) for each diol/diisocyanate pair in L/(mol s). Order them as follows: diol 1 with diisocyanate 1; diol 1 with diisocyanate 2; etc, 10000,10000
+Enter a description of the simulation to be appended to the output filenames, masterbranch

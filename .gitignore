@@ -1,0 +1,17 @@
+Output/
+OldVersions/
+scripts/
+.vscode/
+.vscodebackup/
+KMC_PU_playground/
+archive.sh
+playground.dSYM
+main_KMC_PU.dSYM
+foo3.code-workspace
+playground
+playground.cpp
+molecular_weight
+chain_update
+main_KMC_PU
+.main_KMC_PU.cpp.swo
+.input.txt.swp
