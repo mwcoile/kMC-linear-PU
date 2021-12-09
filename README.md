@@ -1,11 +1,11 @@
 # linear PU AB polymerization model
 
-Welcome to documentation for the simple kinetic Monte Carlo (kMC) polyaddition code. This can be expanded to additional cases, as described by the paper:[insert link]
+Welcome to documentation for the simple kinetic Monte Carlo (kMC) polyaddition code. This can be expanded to additional cases, as described by the paper: https://doi.org/10.1002/mats.202100058
 
-How to run the model:
+How to run the model in a bash shell:
 1. If you have not already compiled the model, run `make` to compile the model
 2. Open the file input.txt, and enter the reaction conditions, kinetic parameters, and simulation size.
-3. Run the model: `./model`
+3. Run the model: `./model` Output results will go in the folder "./Output".
 
 This code is designed to simulate the one-shot synthesis of linear polyurethanes. These are typically produced from a diisocyanate, a short chain extender diol, and a long soft diol. For generalizability, these diols and diisocyanates monomers are referred to as A or B, respectively. So for the scenario of 1 isocyanate and two diol types (chain extender and soft diol), there would be two A type monomers, and one B type monomer.
 
@@ -15,7 +15,7 @@ A vector termed all_chains stores all the individual polymer chains in the simul
 
 Much of the code found in the chain_update.cpp file is straightforward vector manipulation to update these vectors as chains, as illustrated in the figure below:
 
-![image](https://github.com/mwcoile/KMC_PU/blob/master/modelSchematic2.png?raw=true)
+![image](https://github.com/mwcoile/kMC-linear-PU/blob/master/modelSchematic2.png)
 
 The parts of the chain_update.cpp file that are not vector manipulation are selecting the specific functional groups to react. Essentially, if there are n functional groups of a particular type (e.g. unreacted chain extender alcohols), one of them must be chosen at random to be reacted.
 

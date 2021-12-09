@@ -166,7 +166,7 @@ int main() {
     strftime (date,80,"%Y%m%d_%I%M%S%p_%Z",now); 
     std::string str(date);
     std::string mweight = "molecular_weight";
-    std::string path = "/Users/mimivirus/Documents/Research/Polymer_Recycling_Project/MiscellaneousResources/KMC_PU/Output/";
+    std::string path = "./Output/";
     std::string molwtfilename = path+date+mweight+filename;
     molwt.open(molwtfilename); // store time, Mn, Mw, Dispersity
     molwt << "time           Conversion     Mn         Mw         D\n";
